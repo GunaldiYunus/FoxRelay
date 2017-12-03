@@ -1,0 +1,169 @@
+header li:first-child a{
+	color: #444;
+}
+header li:nth-child(4) a{
+	color: #b20000;
+}
+.main-content{
+	padding-top: 80px;
+	overflow: hidden;
+}
+header.large {
+	height: 80px;
+	background-color: #fff;
+	box-shadow: 0 0 7px rgba(0,0,0,.1)
+}
+header.large img {
+ 	height: 40px;
+ 	width: auto;
+ 	margin-top: 20px;
+ 	filter: none;
+}
+/* header small */
+header.small img {
+	height: 35px;
+	margin-top: 15px;
+	width: auto;
+	filter:none;
+}
+.header{
+	display: none;
+}
+
+.top-banner{
+	width: 100%;
+	background: url(../bg-v2.svg);
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center 50%;
+}
+.blur{
+	width: 100%;
+	background-color: rgba(163, 157, 168, 0.06);
+}
+.texture{
+	width: 100%;
+	padding: 30px 0 40px 0;
+}
+.content-form{
+	width: 100%;
+	padding: 80px 0 100px 0;
+	overflow: auto;
+}
+.form{
+	width: 65%;
+	height: auto;
+	float: left;
+	padding: 20px 0 20px 0;
+}
+
+#name, #email{
+	height: 45px;
+	width: 48.5%;
+	border: none;
+	background-color: #EEEEEE;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	font-family: 'Comfortaa',cursive;
+}
+#email{
+	float: right;
+}
+.form textarea{
+	width: 100%;
+	height: 150px;
+	margin: 20px 0;
+	border: none;
+	box-sizing: border-box;
+	padding: 20px 20px;
+	font-family: 'Comfortaa',cursive;
+	background-color: #eeeeee;
+}
+.submit{
+	display: inline;
+	width: 100%;
+}
+.submit input[type=text]{
+	width: 50px;
+	height: 45px;
+	border: none;
+	background-color: #eeeeee;
+	box-sizing: border-box;
+	padding: 15px;
+}
+.submit button{
+	padding: 10px 20px;
+	border: none;
+	background-color: #b20000;
+	border-radius: 10px;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 15px;
+	transition: 0.2s;
+}
+.submit button:hover{
+	padding-right: 35px;
+	transition: 0.2s;
+	padding-left: 15px;
+	background-color: #444;
+}
+.submit button i{
+	position: relative;
+	right: 10px;
+	opacity: 0;
+}
+.submit button:hover i{
+	transition: 0.2s;
+	right: -15px;
+	visibility: visible;
+	opacity: 1;
+}
+
+.submit p{
+	float: right;
+	font-size: 13px;
+}
+.contact-us{
+	width: 30%;
+	height: auto;
+	float: right;
+	padding: 10px 0 30px 0;
+}
+.contact-us p{
+	font-size: 14px;
+	padding: 5px 0 10px 0; 
+} 
+
+@media screen and (max-width: 980px)
+{
+	header.large, header.small{
+		display: none;
+	}
+	.header{
+		width: 100%;
+		height: 100px;
+		display: block;
+		background-color: #fff;
+		position: relative;
+		box-shadow: 0 0 7px rgba(0,0,0,.1);
+	}
+	.main-content{
+		padding: 0;
+	}
+	.form{
+		width: 100%;
+		float: left;
+	}
+	.contact-us{
+		width: 100%;
+		float: left;
+	}
+}
+@media screen and (max-width: 768px){
+	#name, #email{
+		width: 100%;
+	}
+	#email{
+		margin-top: 20px;
+	}
+}
